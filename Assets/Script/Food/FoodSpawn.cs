@@ -9,6 +9,7 @@ public class FoodSpawn : MonoBehaviour
     [SerializeField] private int _poolSize;
     private List<GameObject> poolList;
 
+    [SerializeField] private Spawner MeatSpawner;
     private void Start()
     {
         poolList = new List<GameObject>();
@@ -29,10 +30,12 @@ public class FoodSpawn : MonoBehaviour
         }
         return null;
     }
-    public void OnCollisionExit(Collision collision)
+
+    public void OnTriggerExit(Collider collider)
     {
         StartCoroutine(WaitNewFoodSpawn());
     }
+
     IEnumerator WaitNewFoodSpawn()
     {
         yield return new WaitForSeconds(_waitSpawn);
@@ -41,6 +44,8 @@ public class FoodSpawn : MonoBehaviour
         if (obj != null)
         {
             obj.SetActive(true);
+            MeatSpawner.gameObjectToSpawn = obj;
+            MeatSpawner.SpawnGameObject();
         }
     }
 }
