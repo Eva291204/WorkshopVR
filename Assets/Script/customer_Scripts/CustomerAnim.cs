@@ -15,4 +15,9 @@ public class CustomerAnim : MonoBehaviour
     public void GoToFoodOutlet() { 
         
     }
+
+    public void LeaveFoodOutlet()
+    {
+
+    }
 }
