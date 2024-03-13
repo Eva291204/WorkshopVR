@@ -9,5 +9,7 @@ public class CustomerMain : MonoBehaviour
     public void Start()
     {
         CtmOrder = GetComponent<CustomerOrder>();
+        CtmOrderUI = GetComponent<CustomerOrderUI>();
+        CtmAnim= GetComponent<CustomerAnim>();
     }
 }

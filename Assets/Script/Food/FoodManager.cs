@@ -36,4 +36,5 @@ public struct FoodStruct
 {
     public int NumberTag;
     public GameObject Food;
+    public Sprite FoodSprite;
 }

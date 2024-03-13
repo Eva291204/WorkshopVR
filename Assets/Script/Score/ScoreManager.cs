@@ -27,13 +27,13 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private int _score;
+    [SerializeField] public int Score;
 
     public event Action<int> UpdateScore;
 
     public void SetScore(int newScore)
     {
-        _score += newScore;
-        UpdateScore?.Invoke(_score);
+        Score += newScore;
+        UpdateScore?.Invoke(Score);
     }
 }
