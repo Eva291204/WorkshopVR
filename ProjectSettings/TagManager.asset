@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Anchor
   - Food
+  - Tray
   layers:
   - Default
   - TransparentFX

@@ -1,26 +1,89 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MakeBurger : MonoBehaviour
 {
+    /// <summary>
+    /// ingredients actuels
+    /// </summary>
     [SerializeField] private List<GameObject> _burgerIngredients = new List<GameObject>();
-    [SerializeField] private int _ingredientOnTable;
+    /// <summary>
+    /// ingredients requis
+    /// </summary>
+    [SerializeField] private List<GameObject> _burgerRecipe = new List<GameObject>();
     [SerializeField] private GameObject _burger;
-    public void OnTriggerEnter(Collider collision)
+
+    [SerializeField] private int _burgerCurrentlyOnTable;
+    
+    public void CheckIngredient(GameObject go)
     {
-        for (int i = 0; i < _burgerIngredients.Count; i++)
+        if (go.CompareTag("Food"))
         {
-            if (collision.gameObject.name == _burgerIngredients[i].name)
+            for (int i = 0; i < _burgerRecipe.Count; i++)
             {
-                _ingredientOnTable++;
-                Debug.Log(_ingredientOnTable);
+                if (go.name == _burgerRecipe[i].name)
+                {
+                    if (_burgerIngredients.Count > 0)
+                    {
+                        for (int j = 0; j < _burgerIngredients.Count; j++)
+                        {
+                            if (go.name.Equals(_burgerIngredients[j].name))
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                _burgerIngredients.Add(go);
+                                IngredientAdded();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        _burgerIngredients.Add(go);
+                        IngredientAdded();
+                    }
+                }
             }
-            if(_ingredientOnTable == _burgerIngredients.Count)
+        }
+    }
+
+    public void RemoveIngredient(GameObject go)
+    {
+        if (go.CompareTag("Food"))
+        {
+            for (int i = 0; i < _burgerIngredients.Count; i++)
             {
-                Instantiate(_burger);
-                _burger.transform.position = collision.transform.position;
-                Destroy(collision.gameObject);
+
+                if (go.name.Equals(_burgerIngredients[i].name))
+                {
+                    _burgerIngredients.Remove(go);
+                    _burgerCurrentlyOnTable--;
+                }
             }
+        }
+
+    }
+
+    public void CreateBurger()
+    {
+        Instantiate(_burger);
+        for(int i = 0; i < _burgerIngredients.Count; i++)
+        {
+
+            Destroy(_burgerIngredients[i]);
+
+        }
+    }
+
+    public void IngredientAdded()
+    {
+        _burgerCurrentlyOnTable++;
+        if (_burgerCurrentlyOnTable == _burgerRecipe.Count)
+        {
+            CreateBurger();
+            _burgerCurrentlyOnTable = 0;
         }
     }
 }

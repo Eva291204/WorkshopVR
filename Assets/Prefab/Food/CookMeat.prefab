@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3302962472975004794}
   - component: {fileID: 3377053327093498378}
   - component: {fileID: 5974888849806824131}
+  - component: {fileID: 6745814776672119707}
+  - component: {fileID: -3924481648708049559}
   m_Layer: 0
   m_Name: CookMeat
   m_TagString: Food
@@ -284,3 +286,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: befad917dc5d44cd0b41eee0d485db24, type: 3}
+--- !u!114 &6745814776672119707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418571059046986148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PermittedDisplacementAxes: -1
+  m_ConstrainedAxisDisplacementMode: 1
+  m_TwoHandedRotationMode: 1
+  m_AllowTwoHandedScaling: 0
+  m_ThresholdMoveRatioForScale: 0.05
+  m_ClampScaling: 1
+  m_MinimumScaleRatio: 0.25
+  m_MaximumScaleRatio: 2
+  m_ScaleMultiplier: 0.25
+--- !u!114 &-3924481648708049559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418571059046986148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6918573f2a1769b45a3bcf05b4a3ed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _makeBurger: {fileID: 4715794147052238101, guid: 41735c972914fed4c91e748db99d6fbe, type: 3}
