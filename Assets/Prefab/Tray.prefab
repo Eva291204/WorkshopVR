@@ -153,6 +153,7 @@ MonoBehaviour:
   - {fileID: 2326747764752611465, guid: e52982590dee44d46b10255c5a26eb7b, type: 3}
   - {fileID: 6140459884824744123, guid: 9fc993cbc251988479f79aacaba5bdd5, type: 3}
   - {fileID: 7418571059046986148, guid: e30f93422a84b054285297c44efabaca, type: 3}
+  - {fileID: 7439748195449437464, guid: dae955c9f87efd749879993f5345d3d2, type: 3}
   _burger: {fileID: 3058088589817025801, guid: 3f87bfb88aef8034fb0ef8253f2fd1ca, type: 3}
   _burgerCurrentlyOnTable: 0
 --- !u!114 &5809452451425958592
