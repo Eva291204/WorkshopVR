@@ -9,26 +9,30 @@ public class SliceFood : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-
-        if (CanSlice)
+        if (collision.gameObject.CompareTag("Food"))
         {
-            for (int i = 0; i < _foodSlice.Count; i++)
+            if (CanSlice)
             {
-                if (collision.gameObject.name == _foodToSlice[i].name)
+                if (collision.gameObject.name == _foodToSlice[0].name) //cow
                 {
-                    Instantiate(_foodSlice[i]);
-                    Instantiate(_foodSlice[i]);
-                    _foodSlice[i].transform.position = collision.transform.position;
+                    Instantiate(_foodSlice[0]);
+                    _foodSlice[0].transform.position = collision.transform.position;
                     Destroy(collision.gameObject);
                 }
+
+                for (int i = 1; i < _foodToSlice.Count; i++)
+                {
+                    if (collision.gameObject.name == _foodToSlice[i].name)
+                    {
+
+                        Instantiate(_foodSlice[i]);
+                        Instantiate(_foodSlice[i]);
+                        _foodSlice[i].transform.position = collision.transform.position;
+                        Destroy(collision.gameObject);
+                    }
+                }
+                CanSlice = false;
             }
-            if (collision.gameObject.name == _foodToSlice[1].name) //cow
-            {
-                Instantiate(_foodSlice[1]);
-                _foodSlice[1].transform.position = collision.transform.position;
-                Destroy(collision.gameObject);
-            }
-            CanSlice = false;
         }
     }
 }

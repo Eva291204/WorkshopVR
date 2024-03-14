@@ -123,11 +123,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _foodToSlice:
-  - {fileID: 6706686240542863250, guid: 4d32278c2dfaba047a1f37f21caffb84, type: 3}
   - {fileID: 8288755281533926761, guid: 02444f26822c7734dabdf234ee9d5a21, type: 3}
+  - {fileID: 6706686240542863250, guid: 4d32278c2dfaba047a1f37f21caffb84, type: 3}
+  - {fileID: 4024869611606492713, guid: cd694096e271d1844a6d998bc49d9327, type: 3}
   _foodSlice:
-  - {fileID: 2884305242267704669, guid: a34b5b43990fe73408c515df00019693, type: 3}
   - {fileID: 447649064990610421, guid: b2d953a362e521f4cbaab446b47a1c44, type: 3}
+  - {fileID: 2884305242267704669, guid: a34b5b43990fe73408c515df00019693, type: 3}
+  - {fileID: 7439748195449437464, guid: dae955c9f87efd749879993f5345d3d2, type: 3}
+  CanSlice: 0
 --- !u!54 &5658802182031693265
 Rigidbody:
   m_ObjectHideFlags: 0
