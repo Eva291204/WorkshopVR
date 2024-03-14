@@ -5,8 +5,8 @@ public class CustomerOrderUI : MonoBehaviour
 {
     public CustomerOrder CtmOrder;
 
-    [SerializeField] private GameObject OrderCard;
-    [SerializeField] private GameObject OrderSprite;
+    [SerializeField] private GameObject _orderCard;
+    [SerializeField] private GameObject _orderSpriteGO;
 
     [SerializeField] private Image _orderSprite;
     [SerializeField] private Image _timerColor;
@@ -17,25 +17,25 @@ public class CustomerOrderUI : MonoBehaviour
     public void Start()
     {
         CtmOrder = GetComponent<CustomerOrder>();
-        if (OrderSprite.GetComponent<Image>() != null)
+        if (_orderSpriteGO.GetComponent<Image>() != null)
         {
-            _orderSprite = OrderSprite.GetComponent<Image>();
+            _orderSprite = _orderSpriteGO.GetComponent<Image>();
         }
         else {
             Debug.Log("null");
         }
-        CtmOrder.orderTimerEvent += Notify;
-        OrderCard.SetActive(false);
+        CtmOrder.OrderTimerEvent += Notify;
+        _orderCard.SetActive(false);
     }
 
     public void ActiveOrderCard()
     {
-        OrderCard.SetActive(true);
+        _orderCard.SetActive(true);
     }
 
     public void DesactiveOrderCard()
     {
-        OrderCard.SetActive(false);
+        _orderCard.SetActive(false);
     }
 
     public void SetOrderSprite(Sprite sprite) { 

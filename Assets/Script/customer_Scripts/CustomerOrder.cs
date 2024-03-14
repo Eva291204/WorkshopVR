@@ -4,38 +4,37 @@ using UnityEngine;
 public class CustomerOrder : MonoBehaviour
 {
     public CustomerMain CtmMain;
-    public CustomerOrderUI orderUI;
+    public CustomerOrderUI OrderUI;
 
-    [field: SerializeField] public float orderTimer { get; private set; }
-    [field : SerializeField] public int orderTag { get; private set; }
+    [field: SerializeField] public float OrderTimer { get; private set; }
+    [field : SerializeField] public int OrderTag { get; private set; }
     private bool _orderAsked = false;
 
-    public event Action<float> orderTimerEvent;
+    public event Action<float> OrderTimerEvent;
 
     public void SetOrderTimerEvent(float timer)
     {
-        orderTimer -= Time.deltaTime;
-        orderTimerEvent?.Invoke(timer);
-        if(orderTimer <= 0) {
+        OrderTimer -= Time.deltaTime;
+        OrderTimerEvent?.Invoke(timer);
+        if(OrderTimer <= 0) {
             OrderTimedOut();
         }
     }
 
     public void Start() {
         CtmMain = GetComponent<CustomerMain>();
-        orderUI = GetComponent<CustomerOrderUI>();
-        AskOrder();
+        OrderUI = GetComponent<CustomerOrderUI>();
     }
 
     public void AskOrder() {
-        orderTimer = OrderDifficulty();
+        OrderTimer = OrderDifficulty();
 
         int i = UnityEngine.Random.Range(0, FoodManager.Instance.FoodList.Length);
-        orderTag = FoodManager.Instance.FoodList[i].NumberTag;
+        OrderTag = FoodManager.Instance.FoodList[i].NumberTag;
 
-        orderUI.ActiveOrderCard();
-        orderUI.SetOrderSprite(FoodManager.Instance.FoodList[i].FoodSprite);
-        orderUI.SetOrderTimerSlider(orderTimer);
+        OrderUI.ActiveOrderCard();
+        OrderUI.SetOrderSprite(FoodManager.Instance.FoodList[i].FoodSprite);
+        OrderUI.SetOrderTimerSlider(OrderTimer);
 
         CustomerPlate.Instance.GetCustomer(this.CtmMain);
         _orderAsked = true;
@@ -54,7 +53,7 @@ public class CustomerOrder : MonoBehaviour
     }
 
     public void CheckOrder(int i) {
-        if(orderTag == i) {
+        if(OrderTag == i) {
             ScoreManager.Instance.SetScore(2);
             CtmMain.CtmAnim.LeaveFoodOutlet();
         }
@@ -66,7 +65,7 @@ public class CustomerOrder : MonoBehaviour
 
     public void OrderTimedOut() {
         _orderAsked = false;
-        orderUI.DesactiveOrderCard();
+        OrderUI.DesactiveOrderCard();
 
         ScoreManager.Instance.SetScore(-1);
         CtmMain.CtmAnim.LeaveFoodOutlet();
@@ -74,7 +73,7 @@ public class CustomerOrder : MonoBehaviour
 
     public void Update() {
         if (_orderAsked) {
-            SetOrderTimerEvent(orderTimer);
+            SetOrderTimerEvent(OrderTimer);
         }
     }
 }
