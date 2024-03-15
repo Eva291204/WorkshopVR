@@ -44,13 +44,13 @@ public class CustomerOrder : MonoBehaviour
 
     public float OrderDifficulty() {
         if (ScoreManager.Instance.Score <= 10) {
-            return 30f;
+            return GameManager.Instance.easy;
         }
         else if (ScoreManager.Instance.Score > 10 && ScoreManager.Instance.Score <= 30) {
-            return 20f;
+            return GameManager.Instance.normal;
         }
         else {
-            return 15f;
+            return GameManager.Instance.hard;
         }
     }
 

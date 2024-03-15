@@ -39,6 +39,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI _timerText;
 
+    public float easy = 60f;
+    public float normal = 40f;
+    public float hard = 25f;
+
     private void Start()
     {
         StartCoroutine(StartTheGame());

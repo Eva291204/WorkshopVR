@@ -640,7 +640,7 @@ Transform:
   m_GameObject: {fileID: 736844221576313041}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0763445, y: 0.6807338, z: 0.06027047, w: 0.7260445}
-  m_LocalPosition: {x: 1.7020082, y: 2.7463822, z: -18.27902}
+  m_LocalPosition: {x: 1.586, y: 2.724, z: -18.271}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -727,7 +727,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &2799821137590311751
 BoxCollider:
@@ -1702,7 +1702,7 @@ Transform:
   m_GameObject: {fileID: 3481933875315922617}
   serializedVersion: 2
   m_LocalRotation: {x: -0.07055328, y: 0.7270066, z: 0.062388137, w: 0.6801407}
-  m_LocalPosition: {x: 1.7060255, y: 2.7350025, z: -20.051434}
+  m_LocalPosition: {x: 1.5900172, y: 2.7126203, z: -20.043413}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1789,7 +1789,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &4723918692736366834
 BoxCollider:
@@ -3056,7 +3056,7 @@ Transform:
   m_GameObject: {fileID: 5781192081895538922}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0777944, y: 0.70572865, z: 0.08136954, w: 0.69948137}
-  m_LocalPosition: {x: 1.7600287, y: 2.742842, z: -19.252956}
+  m_LocalPosition: {x: 1.6440204, y: 2.7204597, z: -19.244936}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3143,7 +3143,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &2703325248912797942
 BoxCollider:
@@ -4179,7 +4179,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &7464674639707909106
 BoxCollider:
@@ -5085,7 +5085,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &7446490652914219940
 BoxCollider:
@@ -5251,7 +5251,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &5813562238473143190
 BoxCollider:

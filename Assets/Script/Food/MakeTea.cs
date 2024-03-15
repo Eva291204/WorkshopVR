@@ -9,7 +9,7 @@ public class MakeTea : MonoBehaviour
     [SerializeField] private GameObject _spawnPointTea;
 
     private GameObject collisionObject;
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.name == _emptyTea.name)
         {
@@ -19,7 +19,7 @@ public class MakeTea : MonoBehaviour
             StartCoroutine(TeaMaker());
         }
     }
-    public void OnCollisionExit(Collision collision)
+    public void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.name == _emptyTea.name)
         {

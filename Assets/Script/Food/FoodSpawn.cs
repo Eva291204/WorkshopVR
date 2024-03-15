@@ -5,7 +5,7 @@ using UnityEngine;
 public class FoodSpawn : MonoBehaviour
 {
     [SerializeField] private GameObject _objectToSpawn;
-    [SerializeField]public int WaitSpawn;
+    [SerializeField] public int WaitSpawn;
     [SerializeField] private int _poolSize;
     private List<GameObject> _poolList;
 
