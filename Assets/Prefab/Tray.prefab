@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9187809126869813444}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.8388994, y: 0.8934604, z: 1.5048586}
   m_LocalScale: {x: 1.3486003, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -107,8 +107,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6156363, y: 0.062812805, z: 0.39999998}
-  m_Center: {x: 0.00010213256, y: 0.03092587, z: 2.833321e-19}
+  m_Size: {x: 0.6739504, y: 0.09523404, z: 0.39999998}
+  m_Center: {x: -0.0035852501, y: 0.047136486, z: 0}
 --- !u!54 &8968506859528764313
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -155,7 +155,6 @@ MonoBehaviour:
   - {fileID: 7418571059046986148, guid: e30f93422a84b054285297c44efabaca, type: 3}
   - {fileID: 7439748195449437464, guid: dae955c9f87efd749879993f5345d3d2, type: 3}
   _burger: {fileID: 3058088589817025801, guid: 3f87bfb88aef8034fb0ef8253f2fd1ca, type: 3}
-  _burgerCurrentlyOnTable: 0
 --- !u!114 &5809452451425958592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,5 +187,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6817761, y: 0.26203156, z: 0.41823468}
-  m_Center: {x: -0.006865008, y: 0.123515844, z: 0.009858191}
+  m_Size: {x: 0.6817761, y: 0.13660371, z: 0.41823468}
+  m_Center: {x: -0.0068650073, y: 0.10255331, z: 0.009858191}
