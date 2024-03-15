@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4848652615050129826}
   - component: {fileID: 5102262273236186359}
   - component: {fileID: -7982792069939443677}
+  - component: {fileID: 3156236523288605891}
   m_Layer: 0
   m_Name: Bread
   m_TagString: Food
@@ -297,3 +298,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _makeBurger: {fileID: 4715794147052238101, guid: 41735c972914fed4c91e748db99d6fbe, type: 3}
+--- !u!65 &3156236523288605891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6140459884824744123}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.27307007, y: 0.1529891, z: 0.2740159}
+  m_Center: {x: 0, y: 0.06830155, z: 0.00047290325}

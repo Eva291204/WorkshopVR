@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7168365249814231815}
   - component: {fileID: -5236683891111715745}
   - component: {fileID: 823059003306485889}
+  - component: {fileID: 5227566960664204685}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Food
@@ -297,3 +298,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _makeBurger: {fileID: 4715794147052238101, guid: 41735c972914fed4c91e748db99d6fbe, type: 3}
+--- !u!135 &5227566960664204685
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326747764752611465}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.0655103
+  m_Center: {x: 0.00069126487, y: 0.017105713, z: -0.0010165423}

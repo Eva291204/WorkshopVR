@@ -17,6 +17,7 @@ public class FoodSpawn : MonoBehaviour
         for (int i = 0; i < _poolSize; i++)
         {
             GameObject obj = Instantiate(_objectToSpawn);
+            obj.name = _objectToSpawn.name;
             obj.SetActive(false);
             _poolList.Add(obj);
         }
@@ -33,7 +34,10 @@ public class FoodSpawn : MonoBehaviour
 
     public void OnTriggerExit(Collider collider)
     {
-        StartCoroutine(WaitNewFoodSpawn());
+        if(collider.gameObject.name == _objectToSpawn.name)
+        {
+            StartCoroutine(WaitNewFoodSpawn());
+        }
     }
 
     public void SpawnFood()
