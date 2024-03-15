@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6224662294663286085}
   - component: {fileID: 7708319733046833577}
   - component: {fileID: 3084812175247884845}
+  - component: {fileID: -3025237079934567562}
   m_Layer: 0
   m_Name: CheeseSlice
   m_TagString: Food
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7439748195449437464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3218946, y: 0.7498063, z: -2.664}
+  m_LocalPosition: {x: -2.0309758, y: 1.2455846, z: -2.6649628}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -307,3 +308,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-3025237079934567562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7439748195449437464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6918573f2a1769b45a3bcf05b4a3ed13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _makeBurger: {fileID: 4715794147052238101, guid: 41735c972914fed4c91e748db99d6fbe, type: 3}

@@ -3,18 +3,20 @@ using UnityEngine;
 public class BurgerIngredients : MonoBehaviour
 {
     [SerializeField] private MakeBurger _makeBurger;
-    public void OnCollisionEnter(Collision collision)
+    public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Tray"))
         {
+            _makeBurger = collision.GetComponent<MakeBurger>();
             _makeBurger.CheckIngredient(this.gameObject);
         }
     }
 
-    public void OnCollisionExit(Collision collision)
+    public void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.CompareTag("Tray"))
         {
+            _makeBurger = collision.gameObject.GetComponent<MakeBurger>();
             _makeBurger.RemoveIngredient(this.gameObject);
         }
     }
