@@ -9,6 +9,7 @@ public class CustomerOrder : MonoBehaviour
     [field: SerializeField] public float OrderTimer { get; private set; }
     [field : SerializeField] public int OrderTag { get; private set; }
     private bool _orderAsked = false;
+    private bool _orderDone = false;
 
     public event Action<float> OrderTimerEvent;
 
@@ -38,6 +39,7 @@ public class CustomerOrder : MonoBehaviour
 
         CustomerPlate.Instance.GetCustomer(this.CtmMain);
         _orderAsked = true;
+        _orderDone = false;
     }
 
     public float OrderDifficulty() {
@@ -53,13 +55,17 @@ public class CustomerOrder : MonoBehaviour
     }
 
     public void CheckOrder(int i) {
-        if(OrderTag == i) {
+        if(OrderTag == i && !_orderDone) {
             ScoreManager.Instance.SetScore(2);
             CtmMain.CtmAnim.LeaveFoodOutlet();
+            
+            OrderUI.DesactiveOrderCard();
+            _orderAsked = false;
         }
         else {
             OrderTimedOut();
         }
+        _orderDone = true;
     }
 
 

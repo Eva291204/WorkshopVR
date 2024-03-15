@@ -38,7 +38,7 @@ public class CustomerPlate : MonoBehaviour
             {
                 if(collision.gameObject.name == FoodManager.Instance.FoodList[i].Food.name)
                 {
-                    Destroy(collision.gameObject);
+                    collision.gameObject.SetActive(false);
                     CtmMain.CtmOrder.CheckOrder(FoodManager.Instance.FoodList[i].NumberTag);
                 }
             }
