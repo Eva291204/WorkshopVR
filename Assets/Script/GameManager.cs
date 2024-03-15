@@ -39,6 +39,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI _timerText;
 
+    private void Start()
+    {
+        StartCoroutine(StartTheGame());
+    }
+
     public void LaunchGame() {
         _ctmMain = _customerPool.GetObjectFromPool();
         if (_ctmMain != null) {
@@ -75,5 +80,11 @@ public class GameManager : MonoBehaviour
         if(_gameLaunched) {
             SetGameTimerEvent();
         }
+    }
+
+    public IEnumerator StartTheGame()
+    {
+        yield return new WaitForSeconds(1);
+        LaunchGame();
     }
 }
