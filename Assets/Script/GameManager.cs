@@ -45,13 +45,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void LaunchGame() {
-        _ctmMain = _customerPool.GetObjectFromPool();
-        if (_ctmMain != null) {
-            _ctmMain.gameObject.transform.SetPositionAndRotation(_customerPool.gameObject.transform.position, Quaternion.Euler(0, 90, 0));
-            _ctmMain.gameObject.SetActive(true);
-
-            _ctmMain.GetComponent<CustomerAnim>().GoToFoodOutlet();
-        }
+        SendNewCustomer();
         StartGameTimer();
     }
 
@@ -82,6 +76,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SendNewCustomer() {
+        _ctmMain = _customerPool.GetObjectFromPool();
+        if (_ctmMain != null) {
+            _ctmMain.gameObject.transform.SetPositionAndRotation(_customerPool.gameObject.transform.position, Quaternion.Euler(0, 90, 0));
+            _ctmMain.gameObject.SetActive(true);
+
+            _ctmMain.GetComponent<CustomerAnim>().GoToFoodOutlet();
+        }
+    }
     public IEnumerator StartTheGame()
     {
         yield return new WaitForSeconds(1);

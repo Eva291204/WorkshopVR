@@ -17,6 +17,16 @@ public class CustomerAnim : MonoBehaviour
 
     public void LeaveFoodOutlet()
     {
+        CustomerAnimator.SetTrigger("Leave");
+    }
 
+    public void SendANewCustomer()
+    {
+        GameManager.Instance.SendNewCustomer();
+    }
+
+    public void DesactivateCustomer()
+    {
+        this.gameObject.SetActive(false);
     }
 }
