@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGameTimer() {
         _gameLaunched = true;
+        ScoreManager.Instance.SetScore(0);
     }
 
     public void StopGameTimer() {
