@@ -1,8 +1,7 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,7 +37,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool _gameLaunched;
 
     [SerializeField] TextMeshProUGUI _timerText;
-
     public float easy = 60f;
     public float normal = 40f;
     public float hard = 25f;
@@ -46,6 +44,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartTheGame());
+        PlayerPrefs.SetInt("PlayerScore", ScoreManager.Instance.Score);
     }
 
     public void LaunchGame() {
@@ -59,8 +58,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void StopGameTimer() {
+        PlayerPrefs.SetInt("PlayerScore", ScoreManager.Instance.Score);
         _gameLaunched = false;
-        // Stopper le jeu
+        SceneManager.LoadScene("EndGame");
     }
 
     public void SetGameTimerEvent() {

@@ -13,4 +13,6 @@ public class ScoreUI : MonoBehaviour
     {
         _scoreText.text = newScore.ToString();
     }
+
+    
 }

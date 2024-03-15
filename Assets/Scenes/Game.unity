@@ -3217,7 +3217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customerPool: {fileID: 344937341}
   _ctmMain: {fileID: 0}
-  _gameTimer: 500
+  _gameTimer: 300
   _gameTimerRounded: 0
   _gameLaunched: 0
   _timerText: {fileID: 1269992598}
@@ -5355,7 +5355,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 2.1e-44, z: 6.166e-42, w: -9.141492e+29}
+  m_BoundingSphereOverride: {x: 0, y: 3.0831938e+15, z: 0, w: 2.2828017e+33}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
