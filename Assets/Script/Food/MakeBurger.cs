@@ -14,8 +14,6 @@ public class MakeBurger : MonoBehaviour
     [SerializeField] private List<GameObject> _burgerRecipe = new List<GameObject>();
     [SerializeField] private GameObject _burger;
 
-    [SerializeField] private uint _burgerCurrentlyOnTable;
-    
     public void CheckIngredient(GameObject go)
     {
         if (go.CompareTag("Food")) {
@@ -59,7 +57,6 @@ public class MakeBurger : MonoBehaviour
                 if (go.name == _burgerIngredients[i].name)
                 {
                     _burgerIngredients.Remove(go);
-                    _burgerCurrentlyOnTable--;
                 }
             }
         }
@@ -68,22 +65,22 @@ public class MakeBurger : MonoBehaviour
 
     public void CreateBurger()
     {
-        Instantiate(_burger, _burgerIngredients[0].transform.position, Quaternion.Euler(0, 90, 0));
+        GameObject go = Instantiate(_burger, _burgerIngredients[0].transform.position, Quaternion.Euler(0, 90, 0));
+        go.name = _burger.name;
+
         for(int i = 0; i < _burgerIngredients.Count; i++)
         {
-
-            Destroy(_burgerIngredients[i]);
-
+            _burgerIngredients[i].gameObject.SetActive(false);
         }
+
+        _burgerIngredients.RemoveRange(0, _burgerIngredients.Count);
     }
 
     public void IngredientAdded()
     {
-        _burgerCurrentlyOnTable++;
-        if (_burgerCurrentlyOnTable == _burgerRecipe.Count)
+        if (_burgerIngredients.Count == _burgerRecipe.Count)
         {
             CreateBurger();
-            _burgerCurrentlyOnTable = 0;
         }
     }
 }
