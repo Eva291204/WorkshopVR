@@ -5,15 +5,14 @@ using UnityEngine;
 public class CustomerAnim : MonoBehaviour
 {
     public Animator CustomerAnimator;
-    public CustomerMain CtmMain;
 
     public void Start()
     {
-        CtmMain = GetComponent<CustomerMain>();
+        CustomerAnimator = GetComponent<Animator>();
     }
 
-    public void GoToFoodOutlet() { 
-        
+    public void GoToFoodOutlet() {
+        CustomerAnimator.SetTrigger("GoToOutlet");
     }
 
     public void LeaveFoodOutlet()

@@ -10,6 +10,6 @@ public class CustomerMain : MonoBehaviour
     {
         CtmOrder = GetComponent<CustomerOrder>();
         CtmOrderUI = GetComponent<CustomerOrderUI>();
-        CtmAnim= GetComponent<CustomerAnim>();
+        CtmAnim = GetComponent<CustomerAnim>();
     }
 }
