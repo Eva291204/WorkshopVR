@@ -1008,7 +1008,6 @@ GameObject:
   - component: {fileID: 547044801}
   - component: {fileID: 547044800}
   - component: {fileID: 547044799}
-  - component: {fileID: 547044798}
   m_Layer: 0
   m_Name: TeaRecipePanel
   m_TagString: Untagged
@@ -1032,33 +1031,6 @@ Transform:
   - {fileID: 103026856}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -12.925, y: 90.483, z: 0.237}
---- !u!114 &547044798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547044796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &547044799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2352,7 +2324,6 @@ GameObject:
   - component: {fileID: 801998542}
   - component: {fileID: 801998541}
   - component: {fileID: 801998540}
-  - component: {fileID: 801998539}
   m_Layer: 0
   m_Name: CheeseSliceRecipePanel
   m_TagString: Untagged
@@ -2376,33 +2347,6 @@ Transform:
   - {fileID: 1513169716}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -0.421, y: 262.77, z: 0.116}
---- !u!114 &801998539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801998537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &801998540
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2654,7 +2598,6 @@ GameObject:
   - component: {fileID: 870162863}
   - component: {fileID: 870162862}
   - component: {fileID: 870162861}
-  - component: {fileID: 870162860}
   m_Layer: 0
   m_Name: SodaRecipePanel
   m_TagString: Untagged
@@ -2678,33 +2621,6 @@ Transform:
   - {fileID: 1058424371}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -11.123, y: 86.404, z: -0.959}
---- !u!114 &870162860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870162858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &870162861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2819,7 +2735,6 @@ GameObject:
   - component: {fileID: 931653501}
   - component: {fileID: 931653500}
   - component: {fileID: 931653499}
-  - component: {fileID: 931653498}
   m_Layer: 0
   m_Name: MelonSliceRecipePanel
   m_TagString: Untagged
@@ -2843,33 +2758,6 @@ Transform:
   - {fileID: 20443240}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -0.421, y: 262.77, z: 0.116}
---- !u!114 &931653498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931653496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &931653499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3483,7 +3371,6 @@ GameObject:
   - component: {fileID: 1085551135}
   - component: {fileID: 1085551134}
   - component: {fileID: 1085551133}
-  - component: {fileID: 1085551132}
   m_Layer: 0
   m_Name: BurgerRecipePanel
   m_TagString: Untagged
@@ -3507,33 +3394,6 @@ Transform:
   - {fileID: 1748154819}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -10.759, y: 93.912, z: -1.034}
---- !u!114 &1085551132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085551130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &1085551133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4042,7 +3902,6 @@ GameObject:
   - component: {fileID: 1317553613}
   - component: {fileID: 1317553612}
   - component: {fileID: 1317553611}
-  - component: {fileID: 1317553610}
   m_Layer: 0
   m_Name: RawBeefRecipePanel
   m_TagString: Untagged
@@ -4066,33 +3925,6 @@ Transform:
   - {fileID: 665873695}
   m_Father: {fileID: 1770635476}
   m_LocalEulerAnglesHint: {x: -0.421, y: 262.77, z: 0.116}
---- !u!114 &1317553610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317553608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 0
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 2
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!65 &1317553611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4516,6 +4348,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1438086625}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1416183941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4566,8 +4410,8 @@ GameObject:
   - component: {fileID: 1438086621}
   - component: {fileID: 1438086620}
   - component: {fileID: 1438086619}
-  - component: {fileID: 1438086623}
   - component: {fileID: 1438086624}
+  - component: {fileID: 1438086625}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4660,33 +4504,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.556, y: 1.693}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1438086623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438086618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a2d7d89889b4d94fa1f8d6fe49788e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Target: {fileID: 0}
-  m_TargetOffset: {x: 0, y: 0, z: 0.5}
-  m_FollowInLocalSpace: 0
-  m_ApplyTargetInLocalSpace: 0
-  m_MovementSpeed: 6
-  m_MovementSpeedVariancePercentage: 0.25
-  m_SnapOnEnable: 1
-  m_PositionFollowMode: 1
-  m_MinDistanceAllowed: 0.01
-  m_MaxDistanceAllowed: 0.3
-  m_TimeUntilThresholdReachesMaxDistance: 3
-  m_RotationFollowMode: 1
-  m_MinAngleAllowed: 0.1
-  m_MaxAngleAllowed: 5
-  m_TimeUntilThresholdReachesMaxAngle: 3
 --- !u!114 &1438086624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4706,6 +4523,102 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
+--- !u!82 &1438086625
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438086618}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d14b106713a74b448bcab90869f1706e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1502243543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,7 +4776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668758913251958, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.7
       objectReference: {fileID: 0}
     - target: {fileID: 1984668758913251958, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4891,7 +4804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759388320319, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759388320319, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4927,7 +4840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759906836222, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759906836222, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4947,7 +4860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759991436502, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759991436502, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4983,7 +4896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760453204319, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.7
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760453204319, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5003,7 +4916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760497519799, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760497519799, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5031,7 +4944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760711245992, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760711245992, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y

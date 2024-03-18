@@ -25,11 +25,13 @@ public class MakeTea : MonoBehaviour
         {
             _foodSpawn.StopCoroutine(_foodSpawn.WaitNewFoodSpawn());
             StopCoroutine(TeaMaker());
+            SoundManager.Instance.SoundMakeTea.Stop();
         }
     }
     IEnumerator TeaMaker()
     {
+        SoundManager.Instance.PlayMakeTeaEffectSound();
         yield return new WaitForSeconds(_foodSpawn.WaitSpawn);
-        Destroy(collisionObject);
+        collisionObject.SetActive(false);
     }
 }

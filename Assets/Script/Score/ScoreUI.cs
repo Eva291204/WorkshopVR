@@ -12,7 +12,5 @@ public class ScoreUI : MonoBehaviour
     public void Notify(int newScore)
     {
         _scoreText.text = newScore.ToString();
-    }
-
-    
+    }    
 }

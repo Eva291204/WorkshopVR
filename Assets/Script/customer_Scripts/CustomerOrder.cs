@@ -57,6 +57,7 @@ public class CustomerOrder : MonoBehaviour
     public void CheckOrder(int i) {
         if(OrderTag == i && !_orderDone) {
             ScoreManager.Instance.SetScore(2);
+            SoundManager.Instance.PlayGoodFoodSound();
             CtmMain.CtmAnim.LeaveFoodOutlet();
             
             OrderUI.DesactiveOrderCard();
@@ -74,6 +75,8 @@ public class CustomerOrder : MonoBehaviour
         OrderUI.DesactiveOrderCard();
 
         ScoreManager.Instance.SetScore(-1);
+        SoundManager.Instance.PlayBadFoodSound();
+
         CtmMain.CtmAnim.LeaveFoodOutlet();
     }
 

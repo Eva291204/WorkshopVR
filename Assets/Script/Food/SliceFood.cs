@@ -19,7 +19,7 @@ public class SliceFood : MonoBehaviour
                     go.name = _foodSlice[0].name;
 
                     _foodSlice[0].transform.position = collision.transform.position;
-                    Destroy(collision.gameObject);
+                    collision.gameObject.SetActive(false);
                 }
 
                 for (int i = 1; i < _foodToSlice.Count; i++)
@@ -31,7 +31,7 @@ public class SliceFood : MonoBehaviour
                         go2.name = _foodSlice[i].name;
                         go3.name = go2.name;
                         _foodSlice[i].transform.position = collision.transform.position;
-                        Destroy(collision.gameObject);
+                       collision.gameObject.SetActive(false);
                     }
                 }
                 CanSlice = false;
