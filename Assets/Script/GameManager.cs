@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     public void StopGameTimer() {
         PlayerPrefs.SetInt("PlayerScore", ScoreManager.Instance.Score);
         _gameLaunched = false;
+        ScoreManager.Instance.SetPodium();
         SceneManager.LoadScene("EndGame");
     }
 
@@ -74,7 +75,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Update() {
+    private void Update() {
         if(_gameLaunched) {
             SetGameTimerEvent();
         }
